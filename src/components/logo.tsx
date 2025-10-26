@@ -1,5 +1,4 @@
 import React from 'react';
-import { cn } from '../lib/utils';
 
 export interface LogoProps extends React.SVGProps<SVGSVGElement> {
   size?: number | string;
@@ -7,7 +6,7 @@ export interface LogoProps extends React.SVGProps<SVGSVGElement> {
 }
 
 export const Logo: React.FC<LogoProps> = ({
-  size = 48,
+  size = 42,
   className = '',
   ...props
 }) => {
