@@ -3,6 +3,127 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Fix scroll offset for fixed navbar */
+html {
+  scroll-padding-top: 5rem;
+  /* 80px - navbar height + padding */
+  scroll-behavior: smooth;
+}
+
+/* Prose styles for documentation */
+.prose {
+  color: var(--foreground);
+  max-width: none;
+}
+
+.prose h1 {
+  color: var(--foreground);
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose h2 {
+  color: var(--foreground);
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose h3 {
+  color: var(--foreground);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose h4 {
+  color: var(--foreground);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.prose code {
+  background-color: var(--muted);
+  color: var(--foreground);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.prose pre {
+  background-color: var(--muted);
+  color: var(--foreground);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.prose ul,
+.prose ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin: 0.5rem 0;
+}
+
+.prose blockquote {
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: var(--muted-foreground);
+}
+
+.prose a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.prose th {
+  background-color: var(--muted);
+  font-weight: 600;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
