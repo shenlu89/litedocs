@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { AppNavbar } from "@/components/app-navbar";
-import { AppSidebar } from "@/components/app-sidebar";
+import { AppNavbar } from "@/components/navbar";
+import { AppSidebar } from "@/components/sidebar";
 import { allPages, type Page } from "content-collections";
 import { MDXContent } from "@content-collections/mdx/react";
 import { Pagination } from "@/components/pagination"
