@@ -8,6 +8,12 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { getTableOfContents } from "@/lib/toc"
 import { TableOfContents } from "@/components/table-of-contents";
 
+import { Faq } from "@/components/docs/faq"
+
+const components = {
+  Faq,
+}
+
 export default async function Page({
   params,
 }: {
@@ -32,7 +38,7 @@ export default async function Page({
                 </p>
               )}
               <div className="prose dark:prose-invert max-w-none">
-                <MDXContent code={page.body} />
+                <MDXContent code={page.body} components={components} />
               </div>
             </div>
             <Pagination />
