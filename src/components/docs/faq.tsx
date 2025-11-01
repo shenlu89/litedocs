@@ -4,77 +4,59 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/
 export const Faq = () => {
   const questions = [
     {
-      question: 'Why support different JavaScript frameworks?',
-      answer: (
-        <>
-          Supporting various JavaScript frameworks lets you create design systems that work well on
-          different platforms. It gives developers the freedom to pick the tools that suit their
-          skills and project needs, boosting productivity and making it easier to maintain the
-          codebase over time.
-        </>
-      ),
-    },
-    {
-      question: 'Which JavaScript frameworks are supported?',
-      answer: (
-        <>
-          Park UI, built on top of Ark UI, supports React, Solid, and Vue. We're planning to add
-          Svelte support later this year.
-        </>
-      ),
-    },
-    // Added from introduction.mdx (L38–54)
-    {
-      question: 'Where are pages stored?',
-      answer: (
-        <>
-          All documentation lives in <code>src/content</code> as <code>.mdx</code> files. Each page
-          requires frontmatter fields <code>title</code> and <code>description</code>.
-        </>
-      ),
-    },
-    {
-      question: 'How does routing work?',
-      answer: (
-        <>
-          The dynamic route at <code>src/app/[[...slug]]/page.tsx</code> maps URL segments to a{' '}
-          <code>slug</code>. For example, <code>/overview/getting-started</code> resolves to the MDX
-          page with slug <code>overview/getting-started</code>.
-        </>
-      ),
-    },
-    {
-      question: 'How do I add items to the left sidebar and control pagination?',
-      answer: (
-        <>
-          Edit <code>src/data/meta-data.ts</code>. Add entries with <code>title</code> and{' '}
-          <code>href</code> (e.g., <code>"/overview/getting-started"</code>). The order in this file
-          determines the Prev/Next pagination sequence.
-        </>
-      ),
-    },
-    {
-      question: 'How is the table of contents generated?',
-      answer: (
-        <>
-          Headings (<code>#</code>, <code>##</code>, <code>###</code>) in your MDX are parsed to build
-          a TOC, which is displayed on the right side of the page.
-        </>
-      ),
-    },
-    {
-      question: 'Does it support code highlighting?',
-      answer: (
-        <>
-          Yes. Code blocks are highlighted via Shiki using the <code>github-dark-default</code> theme.
-        </>
-      ),
-    },
-    {
       question: 'What is the default landing page?',
       answer: (
         <>
           If no slug is provided, the site falls back to the <code>introduction</code> page.
+        </>
+      ),
+    },
+    {
+      question: 'How can I customize the visual theme and colors?',
+      answer: (
+        <>
+          Colors can be customized by editing the CSS variables in <code>src/app/globals.css</code>.
+          The file defines design tokens for both light and dark themes. You can also change the
+          base color from Tailwind CSS in <code>components.json</code>.
+        </>
+      ),
+    },
+    {
+      question: 'Is the sidebar collapsible?',
+      answer: (
+        <>
+          Yes, the sidebar can be toggled using the menu icon or the <code>CMD/CTRL + B</code>{' '}
+          keyboard shortcut. Its state is persisted across sessions.
+        </>
+      ),
+    },
+    {
+      question: 'What component library is used?',
+      answer: (
+        <>
+          The project uses unstyled components from <code>shadcn/ui</code>, which you can find in{' '}
+          <code>src/components/ui</code>.
+        </>
+      ),
+    },
+    {
+      question: 'How do I add icons to the project?',
+      answer: (
+        <>
+          The project uses <code>lucide-react</code> for most icons and <code>react-icons</code> for
+          social icons like GitHub and Discord. You can import any icon from these libraries and
+          use it in your components.
+        </>
+      ),
+    },
+    {
+      question: 'What are content collections?',
+      answer: (
+        <>
+          LiteDocs uses <code>content-collections</code> to manage and parse the MDX files from the{' '}
+          <code>src/content</code> directory. The configuration in{' '}
+          <code>content-collections.ts</code> defines how content is processed, including code
+          highlighting and slug generation.
         </>
       ),
     },
