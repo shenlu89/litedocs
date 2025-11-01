@@ -5,7 +5,7 @@
 
 /* Fix scroll offset for fixed navbar */
 html {
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 6rem;
   /* 80px - navbar height + padding */
   scroll-behavior: smooth;
 }
