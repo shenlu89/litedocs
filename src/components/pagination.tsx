@@ -15,7 +15,7 @@ export function Pagination() {
   }
 
   return (
-    <div className="flex items-center justify-between border-t pt-8 space-x-4">
+    <div className="flex items-center justify-between pt-8 space-x-4">
       <div className="flex-1">
         {prev && (
           <Link
