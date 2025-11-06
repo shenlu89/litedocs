@@ -8,7 +8,7 @@ export interface SidebarItem {
  * Sidebar navigation configuration
  * Used for the left sidebar documentation navigation
  */
-export const sidebarData: SidebarItem[] = [
+export const sidebarNavLinks: SidebarItem[] = [
   {
     title: "Overview",
     items: [
@@ -32,6 +32,10 @@ export const sidebarData: SidebarItem[] = [
       {
         title: "Themes",
         href: "/components/themes",
+      },
+      {
+        title: "Code Block",
+        href: "/components/code-block",
       },
       {
         title: "Table of Contents",

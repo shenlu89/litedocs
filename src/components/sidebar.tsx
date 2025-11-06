@@ -10,7 +10,7 @@ import {
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { sidebarData, type SidebarItem } from "@/data/meta-data";
+import { sidebarNavLinks, type SidebarItem } from "@/data/meta-data";
 
 import {
   Sidebar,
@@ -101,7 +101,7 @@ export function AppSidebar() {
         </SidebarHeader>
         <SidebarContent>
           <SidebarGroup className="py-2 px-8">
-            {sidebarData.map((item, index) => (
+            {sidebarNavLinks.map((item, index) => (
               <SidebarSection
                 key={index}
                 item={item}

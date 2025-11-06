@@ -1,4 +1,4 @@
-import { sidebarData, type SidebarItem } from "@/data/meta-data";
+import { sidebarNavLinks, type SidebarItem } from "@/data/meta-data";
 
 // Flatten sidebar structure to get ordered list of all pages
 export function flattenSidebar(
@@ -23,7 +23,7 @@ export function flattenSidebar(
 
 // Get previous and next pages for current page
 export function getNavigationPages(currentSlug: string) {
-  const allPages = flattenSidebar(sidebarData);
+  const allPages = flattenSidebar(sidebarNavLinks);
 
   // Handle special case for introduction page
   if (currentSlug === "introduction") {
