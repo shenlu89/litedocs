@@ -30,7 +30,7 @@ export default async function Page({
         <main className="pt-16 flex w-full justify-center min-h-screen md:pl-68 xl:pr-68">
           <SidebarTrigger className="fixed top-4 left-4 z-5" />
           <article className="flex flex-col flex-1 max-w-3xl md:px-8 px-4 py-8 space-y-8 justify-between">
-            <div className="space-y-2 mb-8">
+            <div className="space-y-2 mb-12">
               <h1 className="text-4xl font-bold">{page.title}</h1>
               {page.description && (
                 <p className="text-xl text-muted-foreground">
