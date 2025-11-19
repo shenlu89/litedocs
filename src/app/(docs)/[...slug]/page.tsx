@@ -7,11 +7,13 @@ import { Pagination } from "@/components/pagination"
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { getTableOfContents } from "@/lib/toc"
 import { TableOfContents } from "@/components/table-of-contents";
+import Link from "@/components/custom-link"
 
 import { Faq } from "@/components/docs/faq"
 
 const components = {
   Faq,
+  a: Link,
 }
 
 export default async function Page({
