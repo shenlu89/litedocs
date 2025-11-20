@@ -45,7 +45,7 @@ export function getNavigationPages(currentSlug: string) {
     prev:
       currentIndex > 0
         ? allPages[currentIndex - 1]
-        : { title: "Introduction", href: "/introduction" },
+        : { title: "Introduction", href: "/" },
     next:
       currentIndex < allPages.length - 1 ? allPages[currentIndex + 1] : null,
   };
