@@ -4,7 +4,7 @@ LiteDocs is built with Tailwind CSS, MDX, Content Collections, and Next.js, and 
 
 ## Documentation
 
-Visit https://litedocs-livid.vercel.app to view the documentation.
+Visit https://litedocs.dev to view the documentation.
 
 ## Contributing
 
