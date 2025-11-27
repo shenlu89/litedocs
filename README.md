@@ -1,6 +1,6 @@
 # LiteDocs
 
-LiteDocs is built with Tailwind CSS, MDX and Next.js, and it is designed to be easy to use and customize.
+LiteDocs is built with Tailwind CSS, MDX, Content Collections, and Next.js, and it is designed to be easy to use and customize.
 
 ## Documentation
 
