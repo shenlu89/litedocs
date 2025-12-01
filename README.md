@@ -16,5 +16,11 @@ We welcome contributions to LiteDocs. Please read our
 [contributing guidelines](https://github.com/shenlu89/litedocs/blob/master/CONTRIBUTING.md) for more information on how to
 contribute.
 
+### Who is using LiteDocs?
+
+| Site | Description | Source |
+| :--- | :--- | :--- |
+| [Mathcheap](https://mathcheap.xyz/docs) | Mathcheap Documentation | [Source](https://github.com/mathcheap/docs) |
+
 ## License
 Licensed under the [MIT License](https://github.com/shenlu89/litedocs/blob/master/LICENSE).
