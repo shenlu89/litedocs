@@ -18,9 +18,7 @@ contribute.
 
 ### Who is using LiteDocs?
 
-| Site | Description | Source |
-| :--- | :--- | :--- |
-| [Mathcheap](https://mathcheap.xyz/docs) | Mathcheap Documentation | [Source](https://github.com/mathcheap/docs) |
+- [Mathcheap](https://mathcheap.xyz/docs) ([Source](https://github.com/mathcheap/docs))
 
 ## License
 Licensed under the [MIT License](https://github.com/shenlu89/litedocs/blob/master/LICENSE).
