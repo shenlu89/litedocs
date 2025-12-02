@@ -90,7 +90,7 @@ export default async function Image() {
         {
           name: "Outfit",
           data: outfitExtraBold,
-          weight: 700,
+          weight: 800,
           style: "normal",
         },
         {
