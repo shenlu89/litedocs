@@ -14,7 +14,7 @@ const ThemeButton: NextPage = () => {
       type="button"
       aria-label="Theme Button"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-gray-200"
+      className="flex text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-gray-200"
     >
       <IconToUse className="size-6" />
     </button>
