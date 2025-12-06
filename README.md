@@ -6,7 +6,7 @@ LiteDocs is built with Tailwind CSS, MDX, Content Collections, and Next.js, and 
 
 Visit https://litedocs.dev to view the documentation.
 
-## Deploy with Vercel
+## Deploy on Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fshenlu89%2Flitedocs)
 
